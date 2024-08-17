@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kethineni Venkata Ganesh - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .profile-img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+
+        .header-text h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            padding: 10px;
+            position: sticky;
+            top: 60px;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        section {
+            padding: 60px 20px;
+            margin: 0 auto;
+            max-width: 800px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        section h2 {
+            background-color: #ddd;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 0;
+        }
+
+        .social-links li {
+            display: inline-block;
+        }
+
+        .social-link {
+            display: block;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 70px;
+            color: #fff;
+            font-size: 24px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-link.instagram {
+            background-color: #E4405F;
+        }
+
+        .social-link.linkedin {
+            background-color: #0077B5;
+        }
+
+        .social-link.github {
+            background-color: #333;
+        }
+
+        .social-link:hover {
+            opacity: 0.8;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="WhatsApp Image 2024-08-17 at 6.10.56 PM.jpeg" alt="Profile Image" class="profile-img">
+            <div class="header-text">
+                <h1>Kethineni Venkata Ganesh</h1>
+                <p>ECE Student | Aspiring Developer</p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Technical Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#hobbies">Hobbies & Interests</a></li>
+            <li><a href="#social-media">Social Media</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I am Kethineni Venkata Ganesh, an Electronics and Communication Engineering student with a passion for
+            technology and development. Currently, I am exploring the realms of embedded systems and web development,
+            aiming to become a proficient full-stack developer.</p>
+        <ul>
+            <li>Embedded Systems: I have hands-on experience with microcontrollers and IoT devices, including designing
+                smart systems such as a smart door lock and an underwater depth finder.</li><br>
+            <li>Web Development: I am delving into full-stack development, mastering both frontend and backend
+                technologies to build responsive and interactive web applications.</li><br>
+            <li>Technical Skills: Proficient in C, Embedded C, and Python programming languages, with a working
+                knowledge of Autodesk Fusion 360, Blender, MATLAB, and PCB design tools.</li><br>
+            <li>Projects: Developed a portable underwater depth finder using an ultrasonic sensor and Arduino, and
+                contributed to a team project creating a smart lock with remote access features.</li><br>
+            <li>Research: Conducted research on resonant tunneling diodes to optimize electrical performance, utilizing
+                advanced simulation tools.</li><br>
+        </ul>
+        <p>I am particularly interested in the intersection of technology and everyday life, striving to create
+            innovative solutions that enhance user experiences. My goal is to leverage my skills in electronics and web
+            development to contribute to cutting-edge projects and drive technological advancements.</p><br>
+        <p>When I’m not immersed in technology, I enjoy exploring new ideas, working out at the gym, and watching anime.
+            I am constantly seeking opportunities to learn and grow, both personally and professionally.</p><br>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <h3>IoT Projects:</h3>
+        <h4>Smart Door Lock System</h4>
+        <p>Developed a smart door lock system controlled via a mobile app using the ESP 32 WiFi module.</p>
+        <h5>Key Features:</h5>
+        <ul>
+            <li>Remote Control: Users can operate the lock from anywhere in the house using the app, ensuring convenient
+                access management.</li><br>
+            <li>Status Monitoring: Provides real-time feedback on the lock’s status, including whether it is locked or
+                unlocked and any unauthorized access attempts.</li><br>
+            <li>Access Logs: Maintains a log of access events, including timestamps and user details, to track and audit
+                door activity.</li><br>
+            <li>Customizable Access: Enables the creation of temporary or permanent access codes for guests or service
+                personnel.</li>
+        </ul>
+        <h5>Technologies Used:</h5>
+        <ul>
+            <li>Hardware: Smart lock hardware, microcontroller units.</li><br>
+            <li>Software: Web and mobile app development, cloud-based data storage and processing.</li>
+        </ul>
+
+        <h4>Portable Underwater Depth Finder</h4>
+        <p>Description: Designed and built a portable underwater depth finder using an ultrasonic sensor and Arduino
+            platform. The device aids divers by providing accurate depth measurements in real-time, enhancing safety and
+            underwater navigation.</p><br>
+        <h5>Key Features:</h5>
+        <ul>
+            <li>Real-Time Depth Measurement: Uses ultrasonic waves to measure depth with high accuracy and display the
+                results on a digital readout.</li><br>
+            <li>Portability: Compact and lightweight design, making it easy to carry and use underwater.</li><br>
+            <li>User-Friendly Interface: Simple display interface that shows depth readings clearly, even in low-light
+                conditions.</li><br>
+            <li>Durability: Engineered to withstand underwater conditions, including water pressure and exposure to
+                saltwater.</li><br>
+        </ul>
+        <h5>Technologies Used:</h5>
+        <ul>
+            <li>Hardware: Arduino microcontroller, ultrasonic sensor, display module.</li><br>
+            <li>Software: Arduino programming for sensor integration and data processing.</li><br>
+        </ul>
+
+        <h3>Research & Development Projects:</h3><br>
+        <h4>Resonant Tunneling Diode Project</h4><br>
+        <p>Description: Conducted an in-depth research project on resonant tunneling diodes (RTDs) using the NanoHUB
+            simulator to study and optimize the drain current by adjusting potential barriers. The project aimed to
+            explore the unique electronic properties of RTDs and improve their performance for various applications in
+            high-speed and low-power electronics.</p><br>
+        <h5>Research Objectives:</h5>
+        <ul>
+            <li>Analyze Resonant Tunneling: Investigated the phenomenon of quantum mechanical tunneling in RTDs, where
+                electrons tunnel through a potential barrier, leading to the formation of a current-voltage
+                characteristic with distinctive resonant peaks.</li><br>
+            <li>Optimize Performance: Focused on optimizing the drain current by modifying the height and width of
+                potential barriers in the RTD structure. This</li>
+            <h5>Research Objectives:</h5>
+            <ul>
+                <li>Analyze Resonant Tunneling: Investigated the phenomenon of quantum mechanical tunneling in RTDs,
+                    where electrons tunnel through a potential barrier, leading to the formation of a
+                    current-voltage characteristic with distinctive resonant peaks.</li><br>
+                <li>Optimize Performance: Focused on optimizing the drain current by modifying the height and width
+                    of potential barriers in the RTD structure. This involved adjusting parameters in the NanoHUB
+                    simulator and analyzing the resulting current characteristics.</li><br>
+                <li>Explore Applications: Examined potential applications of RTDs in high-speed electronics and
+                    low-power devices, leveraging their unique electrical properties for enhanced performance in
+                    various technological contexts.</li><br>
+            </ul>
+            <h5>Technologies Used:</h5>
+            <ul>
+                <li>Software: NanoHUB simulator for electronic device modeling and simulation.</li>
+                <li>Research Tools: Analytical techniques for evaluating tunneling phenomena and performance metrics
+                    of RTDs.</li>
+            </ul>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Programming Languages:</strong> C, Embedded C, Python</li><br>
+            <li><strong>Software & Tools:</strong> Autodesk Fusion 360, Blender, MATLAB, Scilab, NanoHUB simulator</li>
+            <br>
+            <li><strong>Hardware:</strong> PCB Design, Microcontrollers, Ultrasonic Sensors, Arduino</li><br>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li><br>
+        </ul>
+    </section>
+    <section id="experience">
+        <h2>Experience</h2>
+        <h3>Internship with Garuda Aerospace</h3><br>
+        <p><strong>Role:</strong> Drone Pilot</p><br>
+        <p>Gained practical experience in operating and managing drone technology, contributing to aerial survey and
+            data collection projects. Developed skills in flight planning, drone maintenance, and data analysis.</p><br>
+        <h3>Coordinator in SigmaZ and Aurora Symposia</h3><br>
+        <p><strong>Role:</strong> Event Coordinator</p><br>
+        <p>Managed various aspects of technical symposiums, including event planning, coordination with speakers and
+            participants, and logistical support. Contributed to the successful execution of technical sessions and
+            workshops.</p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <h3>Saveetha School of Engineering</h3>
+        <p><strong>Degree:</strong> Bachelor of Engineering in Electronics and Communication Engineering</p><br>
+        <p><strong>CGPA:</strong> 8.12</p><br>
+        <p><strong>Expected Graduation:</strong> 2025</p><br>
+
+
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Fitness Enthusiast: Consistently engage in regular gym workouts to maintain physical fitness and
+                well-being, demonstrating a commitment to health and discipline.</li><br>
+            <li>Anime Aficionado: Appreciate and explore various genres of anime, recognizing the cultural significance
+                and artistic value within this form of entertainment.</li><br>
+            <li>Exploring Electronics: I have a keen interest in experimenting with electronic components, which allows
+                me to deepen my practical knowledge in electrical engineering.</li><br>
+            <li> Problem Solver: I possess strong analytical skills and a methodical approach to solving complex
+                problems, allowing me to efficiently troubleshoot and find solutions in challenging situations.</li>
+        </ul>
+    </section>
+    <section id="social-media">
+        <h2>Social Media</h2>
+        <ul class="social-links">
+            <li><a href="https://www.instagram.com/mr_invetible_/?hl=en" class="social-link instagram"
+                    target="_blank">IG</a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/kethineni-venkata-ganesh-868242280" class="social-link linkedin"
+                    target="_blank">IN</a></li>
+            <li><a href="https://github.com/settings/profile" class="social-link github" target="_blank">GH</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 Kethineni Venkata Ganesh. All rights reserved.</p>
+        <p>For more information, contact me at <a href="mailto:ganeshgane9959@gmail.com">ganeshgane9959@gmail.com</a>.
+        </p>
+    </footer>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const sections = document.querySelectorAll("section");
+            const observerOptions = {
+                root: null,
+                rootMargin: "0px",
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+
+</html>
