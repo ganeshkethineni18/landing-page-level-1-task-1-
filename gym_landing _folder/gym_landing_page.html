@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gym_landing_page.html</title>
+    <style>
+        body {
+            background-image: url('motivational-wallpaper-2560x1440.jpg');
+            background-size: cover;
+            background-position: right;
+            background-repeat: no-repeat;
+            color: black;
+            margin: 0;
+            padding: 0;
+            font-family: arial, sans-serif;
+            height: 150vh;
+            width: 150vw;
+            objec-fill: absolute;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        a {
+            color: whitesmoke;
+            text-decoration: yellowgreen;
+            font-size: 18px;
+            padding: 10px;
+            transition: color 0.3s ease, background-color 0.3s ease;
+        }
+
+        a:hover {
+            color: white;
+            background-color: greenyellow;
+            border-radius: 5px;
+        }
+
+        .navbar img {
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            transform: translate(-50%, -50%);
+            max-width: 40%;
+            height: auto;
+            opacity: 0.2;
+        }
+    </style>
+</head>
+<br>
+<h1 style="position: center " ;>InvitaFit GYM</h1>
+<br>
+<br>
+<hr>
+<hr>
+
+<body>
+    <div class="navbar">
+        <br><br>
+        <h1><a href="about us.html">Home</a></h1>
+        <br><br><br><br>
+        <h1> <a href="membership.html">membership</a></h1>
+        <br><br><br><br>
+        <h1> <a href="diet plan.html">diet plan</a></h1>
+        <br><br><br><br>
+        <h1> <a href="programs.html">Services</a></h1>
+        <br><br><br><br>
+        <h1> <a href="trainers.html">trainers</a></h1>
+        <br><br><br><br>
+        <h1> <a href="contact us.html">Contact us</a><br></h1>
+        <br><br><br>
+        <img src="gym-about us.jpg" alt="">
+    </div>
+    <script>
+        barba.init({
+            transitions: [{
+                name: 'fade',
+                leave(data) {
+                    return gsap.to(data.current.container, {
+                        opacity: 0,
+                        duration: 0.5
+                    });
+                },
+                enter(data) {
+                    return gsap.from(data.next.container, {
+                        opacity: 0,
+                        duration: 0.5
+                    });
+                }
+            }]
+        });
+    </script>
+
+
+</body>
+
+</html>

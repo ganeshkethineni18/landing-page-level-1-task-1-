@@ -1,0 +1,9 @@
+top-right-image {
+    position: absolute;
+    top: 80px;
+    /* Adjust this value to position the image below the <hr> lines */
+    right: 20px;
+    /* Adjust this value for horizontal positioning */
+    width: 400px;
+    /* Set the width of the image */
+    height: auto
